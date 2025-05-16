@@ -1,0 +1,54 @@
+// Button to rotate the base clockwise
+When ButtonBaseCW.Click
+  call BluetoothClient1.SendText("1")
+
+
+// Button to rotate the base counter-clockwise
+When ButtonBaseCCW.Click
+  call BluetoothClient1.SendText("2")
+
+
+// Button to lift the shoulder up
+When ButtonShoulderUp.Click
+  call BluetoothClient1.SendText("3")
+
+
+// Button to lower the shoulder down
+When ButtonShoulderDown.Click
+  call BluetoothClient1.SendText("4")
+
+
+// Button to lift the elbow up
+When ButtonElbowUp.Click
+  call BluetoothClient1.SendText("5")
+
+
+// Button to lower the elbow down
+When ButtonElbowDown.Click
+  call BluetoothClient1.SendText("6")
+
+
+// Button to rotate the wrist clockwise
+When ButtonWristCW.Click
+  call BluetoothClient1.SendText("7")
+
+
+// Button to rotate the wrist counter-clockwise
+When ButtonWristCCW.Click
+  call BluetoothClient1.SendText("8")
+
+
+// Button to open the gripper
+When ButtonGripperOpen.Click
+  call BluetoothClient1.SendText("9")
+
+
+// Button to close the gripper
+When ButtonGripperClose.Click
+  call BluetoothClient1.SendText("0")
+
+
+// Button to reset all servo positions
+When ButtonReset.Click
+  call BluetoothClient1.SendText("R")
+
