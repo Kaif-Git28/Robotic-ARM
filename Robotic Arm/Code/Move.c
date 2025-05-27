@@ -7,6 +7,7 @@ Servo servo03;
 Servo servo04;
 Servo servo05;
 Servo servo06;
+
 SoftwareSerial Bluetooth(3, 4);                                       // Arduino(RX, TX) - HC-05 Bluetooth (TX, RX)
 int servo1Pos, servo2Pos, servo3Pos, servo4Pos, servo5Pos, servo6Pos; // current
 position int servo1PPos, servo2PPos, servo3PPos, servo4PPos, servo5PPos, servo6PPos;
@@ -42,6 +43,7 @@ servo02.attach(6);
     servo6PPos = 80;
     servo06.write(servo6PPos);
 }
+
 void loop()
 {
     // Check for incoming data
@@ -74,6 +76,7 @@ void loop()
             }
             servo1PPos = servo1Pos; // set current position as previous position
         }
+        
         // Move Servo 2
         if (dataIn.startsWith("s2"))
         {
