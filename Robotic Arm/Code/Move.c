@@ -65,6 +65,7 @@ void loop()
                     delay(20); // defines the speed at which the servo rotates
                 }
             }
+            
             // If previous position is smaller then current position
             if (servo1PPos < servo1Pos)
             {
@@ -104,7 +105,7 @@ void loop()
             }
             servo2PPos = servo2Pos;
         }
-        30
+        
             // Move Servo 3
             if (dataIn.startsWith("s3"))
         {
@@ -132,6 +133,7 @@ void loop()
             }
             servo3PPos = servo3Pos;
         }
+        
         // Move Servo 4
         if (dataIn.startsWith("s4"))
         {
@@ -160,6 +162,7 @@ void loop()
             }
             servo4PPos = servo4Pos;
         }
+        
         // Move Servo 5
         if (dataIn.startsWith("s5"))
         {
