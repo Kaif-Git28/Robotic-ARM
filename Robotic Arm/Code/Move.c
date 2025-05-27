@@ -254,6 +254,7 @@ void loop()
     }
 }
 33
+    
     // Automatic mode custom function - run the saved
     steps void
     runservo()
@@ -283,6 +284,7 @@ void loop()
                     }
                 }
                 //
+                
                 If speed slider is
                     changed if (dataIn.startsWith("ss"))
                 {
@@ -302,7 +304,8 @@ void loop()
                     delay(speedDelay);
                 }
             }
-            34 if (servo01SP[i] < servo01SP[i + 1])
+            
+            if (servo01SP[i] < servo01SP[i + 1])
             {
                 for (int j = servo01SP[i]; j <= servo01SP[i + 1]; j++)
                 {
@@ -310,6 +313,7 @@ void loop()
                     delay(speedDelay);
                 }
             }
+            
             // Servo 2
             if (servo02SP[i] == servo02SP[i + 1])
             {
@@ -330,6 +334,7 @@ void loop()
                     delay(speedDelay);
                 }
             }
+            
             // Servo 3
             if (servo03SP[i] == servo03SP[i + 1])
             {
@@ -350,6 +355,7 @@ void loop()
                     delay(speedDelay);
                 }
             }
+            
             // Servo 4
             if (servo04SP[i] == servo04SP[i + 1])
             {
@@ -370,6 +376,7 @@ void loop()
                     delay(speedDelay);
                 }
             }
+            
             // Servo 5
             if (servo05SP[i] == servo05SP[i + 1])
             {
@@ -389,8 +396,9 @@ void loop()
                     servo05.write(j);
                     delay(speedDelay);
                 }
-                36
+                
             }
+            
             // Servo 6
             if (servo06SP[i] == servo06SP[i + 1])
             {
